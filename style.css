@@ -1,4 +1,3 @@
-/* --- Global Styles & Variables --- */
 :root {
     --primary: #2563eb;
     --secondary: #22c55e;
@@ -11,7 +10,6 @@
     --text-light: #ffffff;
     --border-light: #e5e7eb;
     --radius: 3rem;
-    /* Updated as requested */
     --max-width: 1120px;
     font-family: 'Inter', sans-serif;
 }
@@ -48,7 +46,6 @@ h4 {
     line-height: 1.3;
 }
 
-/* --- Utility Classes --- */
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -75,6 +72,7 @@ h4 {
     background: #1e40af;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+    color: #fff;
 }
 
 .card {
@@ -90,7 +88,6 @@ h4 {
     transform: translateY(-8px);
 }
 
-/* --- Animations --- */
 .fade-up {
     opacity: 0;
     transform: translateY(30px);
@@ -115,7 +112,6 @@ h4 {
     }
 }
 
-/* --- Header --- */
 .header {
     position: sticky;
     top: 0;
@@ -145,7 +141,6 @@ h4 {
     display: none;
 }
 
-/* --- Hero Section --- */
 .hero {
     text-align: center;
     padding: 80px 0;
@@ -174,7 +169,6 @@ h4 {
     animation: fadeUp 1.2s ease-out;
 }
 
-/* --- Tiles Section --- */
 .tiles {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -196,7 +190,6 @@ h4 {
     background: var(--card-bg2);
 }
 
-/* --- Two Column Grid --- */
 .two-col-grid {
     display: grid;
     gap: 20px;
@@ -241,7 +234,6 @@ h4 {
     transform: translateY(-3px) scale(1.03);
 }
 
-/* --- Testimonials Carousel --- */
 .testimonials {
     position: relative;
     overflow: hidden;
@@ -292,7 +284,6 @@ h4 {
     color: var(--muted);
 }
 
-/* --- FAQ Section --- */
 .faq-item {
     background: var(--card-bg);
     border: 1px solid var(--border-light);
@@ -313,7 +304,6 @@ h4 {
     color: var(--muted);
 }
 
-/* --- CTA Banner --- */
 .cta-banner {
     text-align: center;
     background: linear-gradient(90deg, var(--primary), #1e40af);
@@ -325,12 +315,10 @@ h4 {
 }
 
 .cta-banner-btn {
-    margin-top: 1rem;
     background: var(--bg);
     color: var(--primary);
 }
 
-/* --- Media Queries --- */
 @media (min-width: 768px) {
     .main-nav ul {
         display: flex;
@@ -347,7 +335,6 @@ h4 {
     }
 }
 
-/* --- About Section --- */
 #about {
     text-align: center;
     max-width: 800px;
@@ -359,7 +346,6 @@ h4 {
     margin-top: 0.5rem;
 }
 
-/* --- Clients Section --- */
 #clients h2 {
     margin-bottom: 2rem;
 }
@@ -392,14 +378,12 @@ h4 {
     transform: translateY(-6px) scale(1.03);
 }
 
-/* --- Responsive tweaks --- */
 @media (min-width: 768px) {
     #clients .tiles {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* Chat Widget */
 #chat-widget {
     position: fixed;
     bottom: 20px;
@@ -504,7 +488,6 @@ h4 {
     cursor: pointer;
 }
 
-/* --- Footer --- */
 .footer {
     background: #f9fafb;
     padding: 60px 20px;
@@ -581,7 +564,6 @@ h4 {
     transform: scale(1.2);
 }
 
-/* Responsive */
 @media (min-width: 768px) {
     .footer-grid {
         grid-template-columns: repeat(4, 1fr);

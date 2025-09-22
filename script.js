@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log("App20 page ready with animations.");
 
-  // Testimonials Auto Carousel
   const testimonials = document.querySelectorAll('.testimonial-card');
   let current = 0;
 
@@ -17,10 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   showTestimonial(current);
-  setInterval(nextTestimonial, 4000); // auto change every 4s
+  setInterval(nextTestimonial, 4000);
 });
 
-// Chat Widget
 const chatToggle = document.getElementById('chat-toggle');
 const chatBox = document.getElementById('chat-box');
 const chatClose = document.getElementById('chat-close');
@@ -55,7 +53,6 @@ function sendMessage() {
   chatText.value = "";
   chatMessages.scrollTop = chatMessages.scrollHeight;
 
-  // Fake bot reply
   setTimeout(() => {
     const botMsg = document.createElement('div');
     botMsg.classList.add('msg', 'bot');
